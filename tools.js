@@ -11,7 +11,7 @@ const TOOLS=[
 ["Bench","https://www.bench.co","bookkeeping","Paid service; still operating (site live Oct 2026)","Done-for-you bookkeeping; check current service status before signing."],
 ["Pilot","https://pilot.com","bookkeeping","From ~$250/mo (shown)","Premium done-for-you books; for high-earning freelancers/LLCs."],
 ["Manager.io","https://www.manager.io","bookkeeping","Free desktop edition (verify)","Free, offline, no-nonsense accounting; dated feel."],
-["Keeper","https://www.keepertax.com","tax","Free tier; paid from ~$20/mo (shown)","Auto-finds write-offs from card transactions; great for 1099 earners."],
+["Keeper","https://keepertax.go2cloud.org/aff_c?offer_id=25&aff_id=2133","tax","Free tier; paid from ~$20/mo (shown)","Auto-finds write-offs from card transactions; great for 1099 earners.",true],
 ["TurboTax Self-Employed","https://turbotax.intuit.com","tax","Paid per filing","Mainstream DIY filing; upsells are aggressive."],
 ["FreeTaxUSA","https://www.freetaxusa.com","tax","Federal $0; state filing fee (see site)","Cheapest legit DIY filing incl. Schedule C."],
 ["IRS Direct Pay","https://www.irs.gov/payments/direct-pay","tax","Free","Free way to pay quarterly estimates; no account needed."],
