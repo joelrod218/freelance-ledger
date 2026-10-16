@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Self-Employment Tax Calculator 2026: 15.3% Rate, $184,500 Cap, 92.35% Rule — Freelance Ledger</title><meta name="description" content="Free 2026 self-employment tax calculator for freelancers. Uses the IRS 2026 Form 1040-ES worksheet: 92.35% of net profit, 12.4% Social Security up to $184,500, 2.9% Medicare, plus the 0.9% Additional Medicare Tax."><link rel="canonical" href="https://www.getfreelanceledger.com/self-employment-tax-calculator.html"><link rel="stylesheet" href="style.css"></head><body>
+<header><p><a href="./">← Freelance Ledger</a></p><h1>Self-Employment Tax Calculator (2026)</h1><p class="stamp">Rates and limits checked against the IRS <a href="https://www.irs.gov/forms-pubs/about-form-1040-es" target="_blank" rel="noopener">2026 Form 1040-ES</a> (Self-Employment Tax and Deduction Worksheet), <a href="https://www.irs.gov/forms-pubs/about-schedule-se-form-1040" target="_blank" rel="noopener">Schedule SE</a>, <a href="https://www.irs.gov/forms-pubs/about-form-8959" target="_blank" rel="noopener">Form 8959</a>, the IRS <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes" target="_blank" rel="noopener">self-employment tax page</a> and the SSA <a href="https://www.ssa.gov/oact/cola/cbb.html" target="_blank" rel="noopener">contribution and benefit base</a> table on October 16, 2026. Tax rules change; confirm with the IRS or a tax professional. This is an estimate and general information, not tax advice.</p></header>
+<main class="article"><p class="disc"><strong>Disclosure:</strong> Some links are affiliate links; we may earn a commission at no cost to you. Verdicts are our own.</p>
+<p>Self-employment tax is the Social Security and Medicare tax you pay as a freelancer, because no employer is paying half of it for you. It's charged on top of income tax, and it's often the bigger surprise. Enter your expected 2026 numbers below. The calculator follows the IRS's own 2026 worksheet line by line and runs entirely in your browser; nothing you type is sent anywhere.</p>
+<div class="calc" id="se">
+<label>Expected 2026 net profit from self-employment $<input id="p" type="number" step="any" value="60000"></label>
+<small>Your profit after business expenses (Schedule C, line 31), not your gross receipts.</small>
+<label>Your 2026 W-2 wages, if any $<input id="w" type="number" min="0" step="any" value="0"></label>
+<label>Filing status <select id="fs"><option value="200000">Single</option><option value="250000">Married filing jointly</option><option value="125000">Married filing separately</option><option value="200000">Head of household</option><option value="200000">Qualifying surviving spouse</option></select></label>
+<label id="spl">Spouse's 2026 W-2 wages (joint filers) $<input id="sw" type="number" min="0" step="any" value="0"></label>
+<table id="out"></table>
+<small>Assumes your W-2 wages are subject to Social Security and Medicare tax, and that a spouse has no self-employment income of their own (each spouse figures self-employment tax separately). Doesn't handle farm income, church employee income or the optional methods.</small>
+</div>
+<h2>How self-employment tax is calculated for 2026</h2>
+<p>This is the same math as the 2026 Self-Employment Tax and Deduction Worksheet in Form 1040-ES:</p>
+<ol><li><strong>Take 92.35% of your net profit.</strong> That's your net earnings from self-employment. The 7.65% you skip mirrors the employer's half of payroll tax.</li>
+<li><strong>Medicare: 2.9%</strong> of that whole amount. There's no cap.</li>
+<li><strong>Social Security: 12.4%</strong>, but only up to the 2026 limit of <strong>$184,500</strong>, and the limit is shared with any W-2 wages. If your wages already reach $184,500, you pay no Social Security part on your freelance income.</li>
+<li><strong>Add them.</strong> Together that's the familiar <strong>15.3%</strong> rate (12.4% + 2.9%) on income under the cap.</li>
+<li><strong>Deduct half.</strong> You can deduct 50% of your self-employment tax when you figure adjusted gross income (Schedule 1, line 15). That lowers your income tax, not the self-employment tax itself.</li></ol>
+<p>If your net earnings from self-employment (step 1) are under <strong>$400</strong>, Schedule SE says you don't owe self-employment tax.</p>
+<h2>Worked examples (2026)</h2>
+<table><tr><th>Situation</th><th>Net earnings (×92.35%)</th><th>Social Security (12.4%)</th><th>Medicare (2.9%)</th><th>Self-employment tax</th><th>Deductible half</th></tr>
+<tr><td>$60,000 profit, no W-2 job</td><td>$55,410</td><td>$6,870.84</td><td>$1,606.89</td><td><strong>$8,477.73</strong></td><td>$4,238.87</td></tr>
+<tr><td>$100,000 profit plus $50,000 W-2 wages</td><td>$92,350</td><td>$11,451.40</td><td>$2,678.15</td><td><strong>$14,129.55</strong></td><td>$7,064.78</td></tr>
+<tr><td>$200,000 profit, no W-2 job, single</td><td>$184,700</td><td>$22,878.00 (capped at $184,500)</td><td>$5,356.30</td><td><strong>$28,234.30</strong></td><td>$14,117.15</td></tr></table>
+<p>In the third example, Social Security stops at $184,500, so the effective rate on the full profit is about 14.1%, not 15.3%. Those are self-employment tax only; regular federal and state income tax come on top.</p>
+<h2>The 0.9% Additional Medicare Tax</h2>
+<p>High earners owe an extra <strong>0.9%</strong> Medicare tax on wages and self-employment income above a threshold set by filing status: <strong>$200,000</strong> single, head of household or qualifying surviving spouse; <strong>$250,000</strong> married filing jointly; <strong>$125,000</strong> married filing separately. According to the IRS, wages and self-employment income are combined to test the threshold: your threshold is first reduced by your Medicare wages (not below zero), and the 0.9% applies to self-employment income above what's left. It's figured on Form 8959, separately from Schedule SE, so it isn't part of the self-employment tax you deduct half of. There's no employer match for it.</p>
+<p>The calculator shows the Additional Medicare Tax on your self-employment income. If your own wages are over your threshold, you also owe 0.9% on that excess wage amount; an employer withholds it only on wages above $200,000.</p>
+<h2>How to pay it</h2>
+<p>There's no separate bill for self-employment tax. You pay it through <a href="quarterly-estimated-taxes-for-freelancers.html">quarterly estimated tax payments</a> along with your income tax, and settle up on your return with Schedule SE. The next 2026 payment is due January 15, 2027. Dividing the calculator's total by four gives you the self-employment tax piece of each quarterly payment; add your expected income tax to get the full amount.</p>
+<h2>Ways to lower it (legally)</h2>
+<ul><li><strong>Track every business expense.</strong> Self-employment tax is based on profit, so while you're under the Social Security limit, each $100 of deductible expenses cuts it by about $14.13 (15.3% × 92.35%), on top of the income tax savings.</li>
+<li><strong>Don't miss the half-tax deduction.</strong> It's claimed automatically by tax software, but if you estimate by hand, subtract it before figuring income tax.</li>
+</ul>
+<h2>Tools that help</h2>
+<p><a href="https://keepertax.go2cloud.org/aff_c?offer_id=25&aff_id=2133" target="_blank" rel="sponsored nofollow noopener">Keeper</a> (affiliate link) is built for 1099 earners: it scans your card and bank transactions for write-offs, which lowers the profit this tax is based on, and its tax plans include federal and state filing. Pricing is listed on our <a href="quarterly-estimated-taxes-for-freelancers.html">estimated taxes guide</a>. To keep the set-aside separate from spending money, see our <a href="best-business-bank-accounts-for-freelancers.html">business bank account guide</a>, and if you get forms from clients or payment apps, our <a href="1099-nec-vs-1099-k-for-freelancers.html">1099-NEC vs 1099-K guide</a> explains what to expect.</p>
+<h2>FAQ</h2>
+<details><summary>What is the self-employment tax rate for 2026?</summary><p>15.3%: 12.4% for Social Security and 2.9% for Medicare, applied to 92.35% of your net profit. The Social Security part stops at $184,500 of combined wages and self-employment earnings in 2026. An extra 0.9% Medicare tax applies above $200,000 (single), $250,000 (married filing jointly) or $125,000 (married filing separately).</p></details>
+<details><summary>Why is it 92.35% and not my full profit?</summary><p>The IRS has you multiply net profit by 92.35% (0.9235) on Schedule SE and in the Form 1040-ES worksheet. The result, your net earnings from self-employment, is what the 15.3% applies to.</p></details>
+<details><summary>Do I owe self-employment tax if I made very little?</summary><p>Not if your net earnings from self-employment are under $400 for the year. You still report the income for income tax purposes.</p></details>
+<details><summary>I have a full-time job too. Does that change anything?</summary><p>Yes. Your W-2 wages count toward the same $184,500 Social Security limit, so a high salary can reduce or eliminate the Social Security part on your side income. The 2.9% Medicare part still applies to all of your self-employment earnings. You can also cover the tax by raising your W-4 withholding instead of sending quarterly payments.</p></details>
+<details><summary>What's the Social Security limit for 2027?</summary><p>The SSA's contribution and benefit base table lists <strong>$192,300</strong> for 2027, up from $184,500 for 2026. Use it when you start planning 2027 estimated payments.</p></details>
+<details><summary>Is self-employment tax the same as income tax?</summary><p>No. It's a separate tax for Social Security and Medicare, owed in addition to federal income tax (and any state tax). Both are paid through the same estimated payments and the same return.</p></details>
+</main>
+<footer>Some links are affiliate links; we may earn a commission at no cost to you. Verdicts are our own. · <a href="privacy.html">Privacy</a> · <a href="./">Home</a></footer>
+<script>
+(function(){
+var SS_BASE=184500,SS=0.124,MED=0.029,ADD=0.009,NE=0.9235;
+var $=function(i){return document.getElementById(i)};
+function money(x){return '$'+x.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function num(i,min){var v=parseFloat($(i).value);if(!isFinite(v))v=0;return min===0?Math.max(0,v):v}
+function calc(){
+var p=num('p'),w=num('w',0),joint=$('fs').selectedIndex===1,sw=joint?num('sw',0):0,thr=+$('fs').value;
+$('spl').style.display=joint?'block':'none';
+var ne=p>0?p*NE:p,rows=[];
+if(ne<400){rows.push(['Net earnings from self-employment (×92.35%)',money(Math.max(0,ne))]);rows.push(['Self-employment tax','$0.00 (under $400 of net earnings)']);}
+else{
+var room=Math.max(0,SS_BASE-w),ssBase=Math.min(ne,room),ss=ssBase*SS,med=ne*MED,se=ss+med;
+var rThr=Math.max(0,thr-(w+sw)),addl=Math.max(0,ne-rThr)*ADD;
+rows.push(['Net earnings from self-employment (×92.35%)',money(ne)]);
+rows.push(['Social Security part (12.4% of '+money(ssBase)+')',money(ss)]);
+rows.push(['Medicare part (2.9%)',money(med)]);
+rows.push(['<strong>Self-employment tax (Schedule SE)</strong>','<strong>'+money(se)+'</strong>']);
+rows.push(['Deductible half (Schedule 1, line 15)',money(se/2)]);
+rows.push(['Additional Medicare Tax on self-employment income (0.9%, Form 8959)',money(addl)]);
+rows.push(['<strong>Total of the above taxes</strong>','<strong>'+money(se+addl)+'</strong>']);
+rows.push(['Per quarter if spread over 4 payments',money((se+addl)/4)]);
+if(p>0)rows.push(['As a share of your net profit',((se+addl)/p*100).toFixed(1)+'%']);
+}
+$('out').innerHTML=rows.map(function(r){return '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>'}).join('');
+}
+['p','w','sw'].forEach(function(i){$(i).oninput=calc});$('fs').onchange=calc;calc();
+})();
+</script></body></html>
