@@ -1,0 +1,17 @@
+{
+  "_readme": "One entry per partner. Put the approved tracking link in \"url\" and set \"live\" to true, then run: node scripts/build.mjs. Anything with an empty url or live:false links to the plain vendor site, gets no 'sponsored' tag and triggers no disclosure banner. Keys match data-aff=\"key\" in pages and lowercase tool names (spaces -> hyphens) in tools.js.",
+  "keeper":    { "name": "Keeper",    "vendor": "https://www.keepertax.com",    "url": "https://keepertax.go2cloud.org/aff_c?offer_id=25&aff_id=2133", "live": true },
+  "wave":      { "name": "Wave",      "vendor": "https://www.waveapps.com",     "url": "", "live": false },
+  "freshbooks":{ "name": "FreshBooks","vendor": "https://www.freshbooks.com",   "url": "", "live": false },
+  "quickbooks-online": { "name": "QuickBooks Online", "vendor": "https://quickbooks.intuit.com", "url": "", "live": false },
+  "xero":      { "name": "Xero",      "vendor": "https://www.xero.com",         "url": "", "live": false },
+  "found":     { "name": "Found",     "vendor": "https://found.com",            "url": "", "live": false },
+  "mercury":   { "name": "Mercury",   "vendor": "https://mercury.com",          "url": "", "live": false },
+  "relay":     { "name": "Relay",     "vendor": "https://relayfi.com",          "url": "", "live": false },
+  "novo":      { "name": "Novo",      "vendor": "https://www.novo.co",          "url": "", "live": false },
+  "ynab":      { "name": "YNAB",      "vendor": "https://www.ynab.com",         "url": "", "live": false },
+  "monarch-money": { "name": "Monarch Money", "vendor": "https://www.monarchmoney.com", "url": "", "live": false },
+  "bonsai":    { "name": "Bonsai",    "vendor": "https://www.hellobonsai.com",  "url": "", "live": false },
+  "honeybook": { "name": "HoneyBook", "vendor": "https://www.honeybook.com",    "url": "", "live": false },
+  "gumroad-templates": { "name": "Own Gumroad templates", "vendor": "", "url": "", "live": false, "_note": "Own product, not an affiliate link. Paste your Gumroad listing URL in \"url\" and set live:true to switch on the template box on the invoice, expense and late-payment pages." }
+}

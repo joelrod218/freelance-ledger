@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://www.getfreelanceledger.com/</loc><lastmod>2026-10-17</lastmod></url>
-<url><loc>https://www.getfreelanceledger.com/best-invoicing-apps-for-freelancers.html</loc><lastmod>2026-10-13</lastmod></url>
-<url><loc>https://www.getfreelanceledger.com/wave-vs-freshbooks.html</loc><lastmod>2026-10-13</lastmod></url>
-<url><loc>https://www.getfreelanceledger.com/best-business-bank-accounts-for-freelancers.html</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://www.getfreelanceledger.com/privacy.html</loc><lastmod>2026-10-13</lastmod></url>
-<url><loc>https://www.getfreelanceledger.com/quarterly-estimated-taxes-for-freelancers.html</loc><lastmod>2026-10-17</lastmod></url>
-<url><loc>https://www.getfreelanceledger.com/1099-nec-vs-1099-k-for-freelancers.html</loc><lastmod>2026-10-15</lastmod></url>
-<url><loc>https://www.getfreelanceledger.com/self-employment-tax-calculator.html</loc><lastmod>2026-10-17</lastmod></url>
-<url><loc>https://www.getfreelanceledger.com/mortgage-calculator.html</loc><lastmod>2026-10-17</lastmod></url>
-<url><loc>https://www.getfreelanceledger.com/car-loan-calculator.html</loc><lastmod>2026-10-17</lastmod></url>
-<url><loc>https://www.getfreelanceledger.com/mortgage-for-self-employed-freelancers.html</loc><lastmod>2026-10-17</lastmod></url>
-<url><loc>https://www.getfreelanceledger.com/car-loan-for-freelancers.html</loc><lastmod>2026-10-17</lastmod></url>
-<url><loc>https://www.getfreelanceledger.com/freelance-hourly-rate-calculator.html</loc><lastmod>2026-10-17</lastmod></url>
-<url><loc>https://www.getfreelanceledger.com/hourly-to-salary-1099-vs-w2.html</loc><lastmod>2026-10-17</lastmod></url>
+  <url><loc>https://www.getfreelanceledger.com/</loc><lastmod>2026-10-17</lastmod><priority>1.0</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/1099-nec-vs-1099-k-for-freelancers.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/about.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/best-business-bank-accounts-for-freelancers.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/best-invoicing-apps-for-freelancers.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/calculators.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/car-loan-calculator.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/car-loan-for-freelancers.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/estimated-tax-due-dates-2027.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/freelance-cash-runway-calculator.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/freelance-expense-tracker-template.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/freelance-hourly-rate-calculator.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/freelance-invoice-template.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/freelance-tax-deductions.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/guides.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/home-office-deduction-calculator.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/hourly-to-salary-1099-vs-w2.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/late-payment-email-templates.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/llc-vs-sole-proprietor-for-freelancers.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/mileage-deduction-calculator.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/mortgage-calculator.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/mortgage-for-self-employed-freelancers.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/privacy.html</loc><lastmod>2026-10-17</lastmod><priority>0.2</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/profit-first-calculator.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/quarterly-estimated-taxes-for-freelancers.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/quarterly-tax-calculator.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/quickbooks-alternatives-for-freelancers.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/self-employment-tax-calculator.html</loc><lastmod>2026-10-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/solo-401k-vs-sep-ira.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/w-9-form-for-freelancers.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/wave-alternatives.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.getfreelanceledger.com/wave-vs-freshbooks.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
 </urlset>

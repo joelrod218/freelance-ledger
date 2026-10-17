@@ -1,0 +1,70 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Freelance Ledger//Estimated tax dates//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:fl-20270115-0@getfreelanceledger.com
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Federal estimated tax payment due (4th quarter 2026)
+DESCRIPTION:Pay at irs.gov/payments/direct-pay. Skip if you file your 2026 return and pay in full by Jan 31\, 2027. Not tax advice.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Federal estimated tax payment due (4th quarter 2026)
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fl-20270415-1@getfreelanceledger.com
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270415
+DTEND;VALUE=DATE:20270416
+SUMMARY:Federal estimated tax payment due (1st quarter 2027)
+DESCRIPTION:Pay at irs.gov/payments/direct-pay. Dates assume the usual rules; confirm on the IRS 2027 Form 1040-ES when published. Not tax advice.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Federal estimated tax payment due (1st quarter 2027)
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fl-20270615-2@getfreelanceledger.com
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270616
+SUMMARY:Federal estimated tax payment due (2nd quarter 2027)
+DESCRIPTION:Pay at irs.gov/payments/direct-pay. Confirm on the IRS 2027 Form 1040-ES when published. Not tax advice.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Federal estimated tax payment due (2nd quarter 2027)
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fl-20270915-3@getfreelanceledger.com
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:Federal estimated tax payment due (3rd quarter 2027)
+DESCRIPTION:Pay at irs.gov/payments/direct-pay. Confirm on the IRS 2027 Form 1040-ES when published. Not tax advice.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Federal estimated tax payment due (3rd quarter 2027)
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fl-20280118-4@getfreelanceledger.com
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280118
+DTEND;VALUE=DATE:20280119
+SUMMARY:Federal estimated tax payment due (4th quarter 2027)
+DESCRIPTION:Jan 15\, 2028 is a Saturday and Jan 17 is Martin Luther King Jr. Day\, so the usual rule moves the date to Tuesday Jan 18. Confirm on the IRS 2027 Form 1040-ES. Not tax advice.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Federal estimated tax payment due (4th quarter 2027)
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
