@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head>
+<meta name="google-site-verification" content="mQcirkdPOCeOGjIeqwNKP9kBJsLlfar-tmRaw5lTGr0" /><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hourly to Salary: 1099 vs W-2 Rate Calculator (2026) — Freelance Ledger</title><meta name="description" content="Free 1099 vs W-2 calculator. Enter a W-2 hourly wage, benefits and unpaid time off to see the 1099 hourly rate you need to match it, including 2026 self-employment tax."><link rel="canonical" href="https://www.getfreelanceledger.com/hourly-to-salary-1099-vs-w2.html"><link rel="stylesheet" href="style.css"></head><body><a class="skip" href="#main" style="position:absolute;left:-999px">Skip to content</a><div class="bar"><div class="in"><a class="logo" href="./">Freelance <span>Ledger</span></a><nav aria-label="Main"><a href="./#guides">Guides</a><a href="./#tools">Tools</a><a href="./#calculators">Calculators</a></nav></div></div>
+<header><p class="back"><a href="./">← Freelance Ledger</a></p><h1>Hourly to Salary: 1099 vs W-2 Rate Calculator</h1><p class="stamp">Tax rates checked against the IRS <a href="https://www.irs.gov/taxtopics/tc751" target="_blank" rel="noopener">Topic 751</a> and <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes" target="_blank" rel="noopener">self-employment tax page</a> on October 17, 2026, plus the figures verified on our <a href="self-employment-tax-calculator.html">self-employment tax calculator</a> (IRS 2026 Form 1040-ES, SSA wage base). Tax rules change. This is an estimate and general information, not tax, legal or financial advice.</p></header>
+<main id="main" class="article"><p class="disc" role="note"><strong>Disclosure:</strong> Some links are affiliate links; we may earn a commission at no cost to you. Verdicts are our own.</p>
+<p>A $50-an-hour contract isn't the same as a $50-an-hour job. As a W-2 employee, your employer pays half of Social Security and Medicare tax and may cover health insurance, a retirement match and paid time off. As a 1099 contractor you pay both halves and cover the rest yourself. Enter a W-2 wage and this calculator shows the 1099 hourly rate you'd need to come out even. It runs in your browser; nothing you type is sent anywhere.</p>
+<div class="calc" id="cmp">
+<label>W-2 hourly wage $<input id="w2" type="number" min="0" step="any" value="40"></label>
+<label>W-2 hours per week <input id="w2h" type="number" min="0" step="any" value="40"></label>
+<small>The W-2 side assumes you're paid for all 52 weeks, including paid holidays and time off.</small>
+<label>Value of employer benefits per year (health premiums paid, retirement match, etc.) $<input id="ben" type="number" min="0" step="any" value="10000"></label>
+<label>Extra business expenses as a contractor per year $<input id="exp" type="number" min="0" step="any" value="3000"></label>
+<label>Unpaid weeks off per year as a 1099 contractor <input id="off" type="number" min="0" max="52" step="any" value="6"></label>
+<label>Billable hours per week as a 1099 contractor <input id="bh" type="number" min="0" step="any" value="40"></label>
+<table id="out"></table>
+<small>Compares money before income tax. Both sides are reduced by Social Security and Medicare tax only; income tax is left out to keep the comparison simple. The 1099 side also gets a small income tax break (the deduction for half of self-employment tax), which this calculator ignores, so the result leans slightly high. It also doesn't include the 0.9% Additional Medicare Tax, state taxes, or the different tax treatment of specific benefits.</small>
+</div>
+<h2>How it works</h2>
+<ol><li><strong>W-2 side:</strong> annual wages = hourly wage × hours per week × 52. The employee pays <strong>6.2% Social Security</strong> (up to the 2026 limit of <strong>$184,500</strong>) and <strong>1.45% Medicare</strong>, per IRS <a href="https://www.irs.gov/taxtopics/tc751" target="_blank" rel="noopener">Topic 751</a>. Add the value of the benefits your employer provides to get your W-2 “total value” after payroll tax.</li>
+<li><strong>1099 side:</strong> a contractor pays <strong>15.3%</strong> (12.4% + 2.9%) on <strong>92.35%</strong> of net profit, with the 12.4% part capped at $184,500 (the same 2026 math as our <a href="self-employment-tax-calculator.html">self-employment tax calculator</a>). The calculator finds the profit that, after that tax, equals your W-2 total value.</li>
+<li><strong>Add expenses:</strong> revenue needed = profit + your extra business expenses.</li>
+<li><strong>Divide by hours:</strong> billable hours = billable hours per week × (52 − unpaid weeks off). The 1099 rate = revenue ÷ billable hours.</li></ol>
+<h2>Worked example</h2>
+<table><tr><th>Step</th><th>Amount</th></tr>
+<tr><td>W-2: $40/hour × 40 hours × 52 weeks</td><td>$83,200.00</td></tr>
+<tr><td>Employee Social Security 6.2% + Medicare 1.45%</td><td>−$6,364.80</td></tr>
+<tr><td>+ Employer benefits value</td><td>+$10,000.00</td></tr>
+<tr><td>W-2 total value after payroll tax</td><td>$86,835.20</td></tr>
+<tr><td>1099 profit needed (so profit − SE tax = $86,835.20)</td><td>$101,123.49</td></tr>
+<tr><td>+ $3,000 expenses = revenue needed</td><td>$104,123.49</td></tr>
+<tr><td>6 weeks unpaid: 46 weeks × 40 billable hours</td><td>1,840 hours</td></tr>
+<tr><td><strong>1099 hourly rate to match</strong></td><td><strong>$56.59 (about 1.41× the W-2 wage)</strong></td></tr></table>
+<h2>Assumptions to understand</h2>
+<ul><li><strong>Benefits are your estimate.</strong> We can't know what your employer's plan is worth. Look at your offer or benefits summary for the employer share of health premiums, any retirement match, and similar items.</li>
+<li><strong>Paid time off matters.</strong> The W-2 side is paid for 52 weeks. The contractor side is paid only for weeks worked, so unpaid weeks off raise the rate you need.</li>
+<li><strong>Billable hours:</strong> if you can't bill 40 hours a week as a contractor, enter a lower number to see how much higher the rate has to be.</li>
+<li><strong>Income tax is not modeled.</strong> Federal and state income tax depend on your whole situation. Health insurance premiums and retirement contributions may have their own deductions, which this simple comparison leaves out.</li>
+<li><strong>Contractor status isn't a free choice.</strong> Whether you're a 1099 contractor or a W-2 employee depends on the working relationship, not on what you and the client agree to. If you're unsure, check the IRS worker classification guidance.</li></ul>
+<h2>Tools that help</h2>
+<p>Pricing as a contractor starts with knowing your taxes. Use the <a href="freelance-hourly-rate-calculator.html">freelance hourly rate calculator</a> to build a rate from the take-home income you want, the <a href="self-employment-tax-calculator.html">self-employment tax calculator</a> for the exact tax on your profit, and the <a href="quarterly-estimated-taxes-for-freelancers.html">estimated taxes guide</a> for payment dates. Contractors receive 1099 forms from clients and payment apps; our <a href="1099-nec-vs-1099-k-for-freelancers.html">1099-NEC vs 1099-K guide</a> explains them. <a href="https://keepertax.go2cloud.org/aff_c?offer_id=25&aff_id=2133" target="_blank" rel="sponsored nofollow noopener">Keeper</a> (affiliate link) scans card and bank transactions for write-offs, which lowers the profit your self-employment tax is based on.</p>
+<p class="disc" role="note"><strong>Not tax advice.</strong> Results are estimates built from the assumptions you enter. Your actual taxes depend on your full situation, deductions, state and local taxes. Check with a tax professional.</p>
+<h2>FAQ</h2>
+<details><summary>How much more should a 1099 contractor charge than a W-2 employee earns?</summary><p>It depends on benefits, time off and billable hours. With the defaults above it's about 41% more. With no benefits and no unpaid time off, the extra is smaller and comes mainly from paying both halves of Social Security and Medicare tax.</p></details>
+<details><summary>What is the self-employment tax rate for 2026?</summary><p>15.3%: 12.4% Social Security (on up to $184,500 of combined earnings in 2026) and 2.9% Medicare, applied to 92.35% of net profit. The IRS lets you deduct the employer-equivalent half when figuring income tax.</p></details>
+<details><summary>Why do W-2 workers only pay 7.65%?</summary><p>The 15.3% total is split. Per the IRS, employees and employers each pay 6.2% Social Security and 1.45% Medicare. A contractor pays both parts.</p></details>
+<details><summary>Can I convert this to a salary?</summary><p>Yes. The W-2 annual wages shown in the results are the salary equivalent of your hourly wage at your hours (hourly × hours per week × 52). The 1099 revenue figure is the matching annual contract revenue.</p></details>
+<details><summary>Does this include health insurance for the contractor?</summary><p>The benefits input is the value you'd lose by leaving the job, so the extra revenue replaces that value. For a rate built from your own actual health and retirement costs, use the <a href="freelance-hourly-rate-calculator.html">hourly rate calculator</a>.</p></details>
+</main>
+<footer>Some links are affiliate links; we may earn a commission at no cost to you. Verdicts are our own. · <a href="privacy.html">Privacy</a> · <a href="./">Home</a></footer>
+<script>
+(function(){
+var SSB=184500;
+function seTax(p){var ne=p*0.9235;if(ne<400)return 0;return Math.min(ne,SSB)*0.124+ne*0.029;}
+function empFica(w){return Math.min(w,SSB)*0.062+w*0.0145;}
+function solveProfit(t){var lo=0,hi=t*2+1000,i,m;for(i=0;i<200;i++){m=(lo+hi)/2;if(m-seTax(m)<t)lo=m;else hi=m;}return (lo+hi)/2;}
+function compare(o){
+var wages=o.w2*o.w2h*52,fica=empFica(wages),netW2=wages-fica+o.ben;
+var profit=solveProfit(netW2),se=seTax(profit),rev=profit+o.exp,weeks=Math.max(0,52-o.off),hours=o.bh*weeks;
+var rate=hours>0?rev/hours:0;
+return {wages:wages,fica:fica,ben:o.ben,netW2:netW2,profit:profit,se:se,rev:rev,weeks:weeks,hours:hours,rate:rate,mult:o.w2>0?rate/o.w2:0};}
+var $=function(i){return document.getElementById(i)};
+function money(x){return '$'+x.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function n(i){var v=parseFloat($(i).value);return isFinite(v)&&v>0?v:0}
+function calc(){
+var o={w2:n('w2'),w2h:n('w2h'),ben:n('ben'),exp:n('exp'),off:Math.min(52,n('off')),bh:n('bh')};
+var r=compare(o);
+if(r.hours<=0){$('out').innerHTML='<tr><td>Enter billable hours and fewer than 52 weeks off.</td></tr>';return;}
+var rows=[['W-2 annual wages (salary equivalent)',money(r.wages)],['Employee Social Security + Medicare tax',money(r.fica)],['Employer benefits value',money(r.ben)],['<strong>W-2 total value after payroll tax</strong>','<strong>'+money(r.netW2)+'</strong>'],
+['1099 profit needed',money(r.profit)],['1099 self-employment tax on that profit',money(r.se)],['Business expenses',money(o.exp)],['<strong>1099 revenue needed per year</strong>','<strong>'+money(r.rev)+'</strong>'],['Billable hours per year',Math.round(r.hours).toLocaleString('en-US')],
+['<strong>Equivalent 1099 hourly rate</strong>','<strong>'+money(r.rate)+'</strong>'],['Compared with your W-2 wage',o.w2>0?r.mult.toFixed(2)+'×':'n/a'],['Extra per hour needed',money(r.rate-o.w2)]];
+$('out').innerHTML=rows.map(function(x){return '<tr><td>'+x[0]+'</td><td>'+x[1]+'</td></tr>'}).join('');}
+['w2','w2h','ben','exp','off','bh'].forEach(function(i){$(i).oninput=calc});calc();
+})();
+</script><!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9f2a9f711cc14027b0414014ae5d8877"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>

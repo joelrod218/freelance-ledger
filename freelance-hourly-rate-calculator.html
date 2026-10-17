@@ -1,0 +1,66 @@
+<!doctype html><html lang="en"><head>
+<meta name="google-site-verification" content="mQcirkdPOCeOGjIeqwNKP9kBJsLlfar-tmRaw5lTGr0" /><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Freelance Hourly Rate Calculator: What to Charge to Hit Your Income Goal — Freelance Ledger</title><meta name="description" content="Free freelance hourly rate calculator. Enter the take-home income you want, billable hours, weeks off, expenses, taxes, retirement and health costs to get your hourly and day rate. Runs in your browser."><link rel="canonical" href="https://www.getfreelanceledger.com/freelance-hourly-rate-calculator.html"><link rel="stylesheet" href="style.css"></head><body><a class="skip" href="#main" style="position:absolute;left:-999px">Skip to content</a><div class="bar"><div class="in"><a class="logo" href="./">Freelance <span>Ledger</span></a><nav aria-label="Main"><a href="./#guides">Guides</a><a href="./#tools">Tools</a><a href="./#calculators">Calculators</a></nav></div></div>
+<header><p class="back"><a href="./">← Freelance Ledger</a></p><h1>Freelance Hourly Rate Calculator</h1><p class="stamp">Tax rates checked against the IRS <a href="https://www.irs.gov/taxtopics/tc751" target="_blank" rel="noopener">Topic 751</a> and <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes" target="_blank" rel="noopener">self-employment tax page</a> on October 17, 2026, plus the figures verified on our <a href="self-employment-tax-calculator.html">self-employment tax calculator</a> (IRS 2026 Form 1040-ES, SSA wage base). Tax rules change. This is an estimate and general information, not tax, legal or financial advice.</p></header>
+<main id="main" class="article"><p class="disc" role="note"><strong>Disclosure:</strong> Some links are affiliate links; we may earn a commission at no cost to you. Verdicts are our own.</p>
+<p>Most new freelancers set a rate by guessing, or by dividing a salary by 2,080 hours. That ignores the tax you pay yourself, the weeks you don't bill, and costs an employer would have covered. Enter the take-home income you want and this calculator works backward to the hourly and day rate that gets you there. It runs in your browser; nothing you type is sent anywhere.</p>
+<div class="calc" id="hr">
+<label>Take-home income you want per year (after taxes) $<input id="take" type="number" min="0" step="any" value="80000"></label>
+<label>Billable hours per week <input id="bh" type="number" min="0" step="any" value="30"></label>
+<small>Hours you actually invoice. Sales, admin and bookkeeping time usually fall outside this number, so 20 to 30 is a common assumption for a full-time week.</small>
+<label>Weeks off per year (vacation, holidays, sick, gaps) <input id="off" type="number" min="0" max="52" step="any" value="6"></label>
+<label>Business expenses per year (software, equipment, insurance, etc.) $<input id="exp" type="number" min="0" step="any" value="6000"></label>
+<label>Retirement contributions per year $<input id="ret" type="number" min="0" step="any" value="6000"></label>
+<label>Health insurance and medical costs per year $<input id="health" type="number" min="0" step="any" value="6000"></label>
+<label>Self-employment tax set-aside % <input id="se" type="number" min="0" step="any" value="14.1"></label>
+<label>Income tax set-aside % (federal + state) <input id="inc" type="number" min="0" step="any" value="12"></label>
+<label>Billable hours in a working day <input id="hpd" type="number" min="1" step="any" value="6"></label>
+<table id="out"></table>
+<small>The default self-employment tax set-aside is 15.3% × 92.35% ≈ 14.1% of net profit (below the Social Security limit). Your income tax rate depends on your income, filing status, deductions and state, so the 12% default is only a placeholder. Replace it with your own figure.</small>
+</div>
+<h2>How it works</h2>
+<ol><li><strong>Weeks worked</strong> = 52 minus your weeks off. <strong>Billable hours</strong> = billable hours per week × weeks worked.</li>
+<li><strong>Pre-tax profit needed</strong> = take-home income ÷ (1 − combined tax set-aside %). If you want $80,000 in your pocket and set aside 26.1%, you need about $108,254 of profit before tax.</li>
+<li><strong>Revenue needed</strong> = pre-tax profit + business expenses + retirement contributions + health costs.</li>
+<li><strong>Hourly rate</strong> = revenue needed ÷ billable hours. <strong>Day rate</strong> = revenue needed ÷ (billable hours ÷ billable hours per day).</li></ol>
+<h2>Worked example</h2>
+<table><tr><th>Input</th><th>Value</th></tr><tr><td>Take-home goal</td><td>$80,000</td></tr><tr><td>30 billable hours × 46 weeks</td><td>1,380 hours</td></tr><tr><td>Tax set-aside (14.1% + 12%)</td><td>26.1%</td></tr><tr><td>Pre-tax profit needed</td><td>$108,254.40</td></tr><tr><td>+ expenses $6,000 + retirement $6,000 + health $6,000</td><td>$126,254.40 revenue needed</td></tr><tr><td><strong>Hourly rate</strong></td><td><strong>$91.49</strong></td></tr><tr><td><strong>Day rate (6 billable hours)</strong></td><td><strong>$548.93</strong></td></tr></table>
+<h2>Assumptions to understand</h2>
+<ul><li><strong>Taxes are a set-aside, not a calculation.</strong> The self-employment tax part follows the IRS rates: 15.3% (12.4% Social Security + 2.9% Medicare) applied to 92.35% of net profit, per the IRS <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes" target="_blank" rel="noopener">self-employment tax page</a>. The Social Security part stops at $184,500 of combined wages and self-employment earnings in 2026 (IRS <a href="https://www.irs.gov/taxtopics/tc751" target="_blank" rel="noopener">Topic 751</a>). The calculator applies a flat percentage, so it slightly overstates the rate at high incomes.</li>
+<li><strong>Retirement and health costs are treated as extra costs on top of your take-home goal,</strong> and the tax set-aside is applied only to the take-home part. Many of these costs may be deductible, which can lower your real tax bill, so this leans conservative. A tax professional can tell you what applies to you.</li>
+<li><strong>Take-home means money you can spend.</strong> If you'd rather count retirement savings as part of your income, set that line to $0.</li>
+<li><strong>Late or unpaid invoices and scope creep are not modeled.</strong> Many freelancers add a cushion for them; that's a judgment call, not an IRS number.</li></ul>
+<h2>Tools that help</h2>
+<p>Everything above works best with real numbers. Keep your expenses and tax set-aside honest with a <a href="best-business-bank-accounts-for-freelancers.html">separate business bank account</a>, send professional invoices with one of the <a href="best-invoicing-apps-for-freelancers.html">best invoicing apps</a>, and see the exact self-employment tax on your numbers with our <a href="self-employment-tax-calculator.html">self-employment tax calculator</a>. <a href="https://keepertax.go2cloud.org/aff_c?offer_id=25&aff_id=2133" target="_blank" rel="sponsored nofollow noopener">Keeper</a> (affiliate link) is built for 1099 earners and scans your card and bank transactions for write-offs, which lowers the profit your taxes are based on. Planning quarterly payments? See our <a href="quarterly-estimated-taxes-for-freelancers.html">estimated taxes guide</a>. Comparing a job offer with contract work? Try the <a href="hourly-to-salary-1099-vs-w2.html">1099 vs W-2 rate calculator</a>. Applying for a loan with variable income? See the <a href="mortgage-for-self-employed-freelancers.html">self-employed mortgage guide</a>.</p>
+<p class="disc" role="note"><strong>Not tax advice.</strong> Results are estimates built from the assumptions you enter. Your actual taxes depend on your full situation, deductions, state and local taxes. Check with a tax professional.</p>
+<h2>FAQ</h2>
+<details><summary>Why is my hourly rate so much higher than a salary divided by 2,080?</summary><p>2,080 is 40 hours × 52 weeks, which assumes you bill every hour and take no unpaid time off. Freelancers don't bill every hour, don't get paid vacation, and pay both halves of Social Security and Medicare tax, so the same income needs a higher rate.</p></details>
+<details><summary>How many billable hours should I assume?</summary><p>It depends on your work. Unbilled time for finding clients, proposals, invoicing and admin is real. There's no official number; start with your own time tracking and adjust this input.</p></details>
+<details><summary>What tax percentage should I use?</summary><p>For self-employment tax, about 14.1% of net profit is the standard IRS-based figure while you're under the Social Security limit. For income tax, use your own estimate from last year's return or a tax professional. Our <a href="self-employment-tax-calculator.html">self-employment tax calculator</a> gives the exact SE tax.</p></details>
+<details><summary>Should I charge hourly, daily or per project?</summary><p>That's a business choice. The hourly and day rates here give you a floor, so any project price can be checked against how many hours it will take.</p></details>
+<details><summary>Does this include state taxes?</summary><p>Only if you include them in the income tax set-aside %. The calculator doesn't know your state.</p></details>
+</main>
+<footer>Some links are affiliate links; we may earn a commission at no cost to you. Verdicts are our own. · <a href="privacy.html">Privacy</a> · <a href="./">Home</a></footer>
+<script>
+(function(){
+function hourlyRate(o){
+var weeks=Math.max(0,52-o.off),hours=o.bh*weeks,t=(o.se+o.inc)/100;
+var pre=o.take/(1-t),rev=pre+o.exp+o.ret+o.health;
+var days=o.hpd>0?hours/o.hpd:0;
+return {weeks:weeks,hours:hours,t:t,pre:pre,tax:pre-o.take,rev:rev,hr:hours>0?rev/hours:0,day:days>0?rev/days:0,days:days};}
+var $=function(i){return document.getElementById(i)};
+function money(x){return '$'+x.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function n(i){var v=parseFloat($(i).value);return isFinite(v)&&v>0?v:0}
+function calc(){
+var o={take:n('take'),bh:n('bh'),off:Math.min(52,n('off')),exp:n('exp'),ret:n('ret'),health:n('health'),se:n('se'),inc:n('inc'),hpd:n('hpd')||1};
+if((o.se+o.inc)>=100){$('out').innerHTML='<tr><td>Tax set-aside must total under 100%.</td></tr>';return;}
+var r=hourlyRate(o);
+if(r.hours<=0){$('out').innerHTML='<tr><td>Enter billable hours and fewer than 52 weeks off.</td></tr>';return;}
+var rows=[['Weeks worked',r.weeks.toFixed(1)],['Billable hours per year',Math.round(r.hours).toLocaleString('en-US')],
+['Take-home income goal',money(o.take)],['Tax set-aside ('+(r.t*100).toFixed(1)+'%)',money(r.tax)],['Business expenses',money(o.exp)],['Retirement contributions',money(o.ret)],['Health costs',money(o.health)],
+['<strong>Revenue needed per year</strong>','<strong>'+money(r.rev)+'</strong>'],['Revenue needed per month',money(r.rev/12)],
+['<strong>Hourly rate</strong>','<strong>'+money(r.hr)+'</strong>'],['<strong>Day rate ('+o.hpd+' billable hours)</strong>','<strong>'+money(r.day)+'</strong>'],['Week rate (at your billable hours)',money(r.hr*o.bh)]];
+$('out').innerHTML=rows.map(function(x){return '<tr><td>'+x[0]+'</td><td>'+x[1]+'</td></tr>'}).join('');}
+['take','bh','off','exp','ret','health','se','inc','hpd'].forEach(function(i){$(i).oninput=calc});calc();
+})();
+</script><!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9f2a9f711cc14027b0414014ae5d8877"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>
