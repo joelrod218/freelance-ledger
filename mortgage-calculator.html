@@ -1,0 +1,65 @@
+<!doctype html><html lang="en"><head>
+<meta name="google-site-verification" content="mQcirkdPOCeOGjIeqwNKP9kBJsLlfar-tmRaw5lTGr0" /><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mortgage Calculator for Self-Employed Buyers: Monthly Payment with Taxes, Insurance & HOA — Freelance Ledger</title><meta name="description" content="Free mortgage payment calculator for self-employed and freelance buyers. See your PITI breakdown with property tax, insurance and HOA, plus an amortization summary. Runs in your browser."><link rel="canonical" href="https://www.getfreelanceledger.com/mortgage-calculator.html"><link rel="stylesheet" href="style.css"></head><body><a class="skip" href="#main" style="position:absolute;left:-999px">Skip to content</a><div class="bar"><div class="in"><a class="logo" href="./">Freelance <span>Ledger</span></a><nav aria-label="Main"><a href="./#guides">Guides</a><a href="./#tools">Tools</a><a href="./#calculators">Calculators</a></nav></div></div>
+<header><p class="back"><a href="./">← Freelance Ledger</a></p><h1>Mortgage Calculator for Self-Employed Buyers</h1><p class="stamp">Payment formula checked in Node against known examples. Cost definitions from the CFPB (see sources below), read October 17, 2026. An estimate only.</p></header>
+<main id="main" class="article"><p class="disc" role="note"><strong>Disclosure:</strong> Some links on this site are affiliate links; we may earn a commission at no cost to you. Verdicts are our own. This page has no affiliate links for loans or lenders, and we are paid nothing by any lender mentioned.</p>
+<p class="callout info" role="note"><strong>Not financial advice.</strong> This page is general information and an estimate, not financial, tax or legal advice, and not an offer of credit. We don't state current rates and can't tell you whether you'll be approved. Lenders set their own requirements and terms, so confirm with the lender and a qualified professional.</p>
+<p>If you work for yourself, lenders look at your income differently than they would a paycheck. Most of the time, what counts is the profit your tax returns show, not your gross revenue. Use this calculator to see what a home would cost each month, then check the number against the net income on your own returns. The math runs entirely in your browser; nothing you enter is sent anywhere.</p>
+<div class="calc" id="mc">
+<label>Home price $<input id="pr" type="number" min="0" step="any" value="400000"></label>
+<label>Down payment $<input id="dn" type="number" min="0" step="any" value="80000"></label>
+<label>Interest rate (% per year) <input id="rt" type="number" min="0" step="any" value="6.5"></label>
+<small>Enter the rate from a lender's quote. We don't supply current rates.</small>
+<label>Loan term <select id="tm"><option value="30" selected>30 years</option><option value="20">20 years</option><option value="15">15 years</option><option value="10">10 years</option></select></label>
+<label>Property tax per year $<input id="tx" type="number" min="0" step="any" value="4800"></label>
+<label>Homeowners insurance per year $<input id="in" type="number" min="0" step="any" value="1800"></label>
+<label>HOA dues per month $<input id="ho" type="number" min="0" step="any" value="0"></label>
+<label>Mortgage insurance per month $ (optional)<input id="pm" type="number" min="0" step="any" value="0"></label>
+<small>Mortgage insurance is typically required with a conventional loan when the down payment is under 20%, per the CFPB. Enter the amount from your Loan Estimate if it applies. The example values above are placeholders, not typical figures for any area.</small>
+<table id="out"></table>
+</div>
+<h2>What the numbers mean</h2>
+<p>PITI stands for principal, interest, taxes and insurance. The CFPB describes the total monthly payment as principal plus interest, plus mortgage insurance if applicable, plus the escrow amount for homeowners insurance and taxes. Property taxes and insurance are costs of homeownership rather than loan costs, so they may change from year to year even when your principal and interest payment stays the same. HOA dues are usually paid separately from the loan, but lenders count them as a housing cost, and the CFPB lists them among the monthly obligations a lender considers when deciding whether you can repay.</p>
+<p>The amortization summary shows how much of your early payments goes to principal. In the first years of a long loan most of each payment is interest, so the balance falls slowly at first.</p>
+<h2>Check it against how lenders see your income</h2>
+<p>Qualifying is based on the income a lender can document and verify, not on what you deposit. A rough self-check: take the net profit on your last two years of returns (Schedule C), divide by 24 for a monthly figure, and compare it to the total payment above plus your other monthly debts. Lenders do their own calculation, including adjustments for the way your business income is reported, so treat this only as a sanity check. Our guide to <a href="mortgage-for-self-employed-freelancers.html">getting a mortgage as a self-employed freelancer</a> walks through what lenders ask for and how they analyze it.</p>
+<p>Two other links worth keeping handy: <a href="self-employment-tax-calculator.html">how much self-employment tax</a> reduces what you keep, and the <a href="car-loan-calculator.html">car loan calculator</a>, since a car payment counts as monthly debt on a mortgage application.</p>
+<h2>Limits of this calculator</h2>
+<ul><li>It uses the standard fixed-rate payment formula. Adjustable-rate loans, interest-only loans, points, closing costs and prepaid items aren't included.</li>
+<li>Taxes, insurance and mortgage insurance are entered by you and held flat; real escrow amounts change over time.</li>
+<li>It doesn't predict whether you'll qualify or what rate you'll be offered. Compare Loan Estimates from several lenders.</li></ul>
+<p>Sources: the CFPB pages on <a href="https://www.consumerfinance.gov/ask-cfpb/on-a-mortgage-whats-the-difference-between-my-principal-and-interest-payment-and-my-total-monthly-payment-en-1941/" target="_blank" rel="noopener">principal and interest vs. total monthly payment</a>, <a href="https://www.consumerfinance.gov/ask-cfpb/what-is-an-escrow-or-impound-account-en-140/" target="_blank" rel="noopener">escrow accounts</a>, <a href="https://www.consumerfinance.gov/ask-cfpb/what-costs-come-with-taking-out-a-mortgage-en-153/" target="_blank" rel="noopener">mortgage costs</a> and <a href="https://www.consumerfinance.gov/ask-cfpb/what-is-private-mortgage-insurance-en-122/" target="_blank" rel="noopener">private mortgage insurance</a>, plus the CFPB <a href="https://files.consumerfinance.gov/f/documents/cpfb_atr-qm_small-entity_compliance-guide.pdf" target="_blank" rel="noopener">ability-to-repay compliance guide</a>, all read October 17, 2026.</p>
+</main>
+<footer>Some links are affiliate links; we may earn a commission at no cost to you. Verdicts are our own. · <a href="privacy.html">Privacy</a> · <a href="./">Home</a></footer>
+<script>
+(function(){
+function $(i){return document.getElementById(i)}
+function money(x){return x.toLocaleString('en-US',{style:'currency',currency:'USD'})}
+function pmt(P,rate,years){var n=Math.round(years*12),r=rate/100/12;if(P<=0)return 0;if(r===0)return P/n;return P*r/(1-Math.pow(1+r,-n))}
+function calc(){
+var price=+$('pr').value||0,down=+$('dn').value||0,rate=+$('rt').value||0,yrs=+$('tm').value||30,tax=+$('tx').value||0,ins=+$('in').value||0,hoa=+$('ho').value||0,pmi=+$('pm').value||0;
+var loan=Math.max(0,price-down),n=Math.round(yrs*12),pi=pmt(loan,rate,yrs),total=pi*n,interest=Math.max(0,total-loan);
+var t=tax/12,i=ins/12,piti=pi+t+i,all=piti+pmi+hoa;
+var rows=[];
+if(down>price&&price>0)rows.push(['Note','Down payment is larger than the price; loan set to $0.']);
+rows.push(['Loan amount',money(loan)]);
+rows.push(['Down payment',price>0?(down/price*100).toFixed(1)+'% of price':'—']);
+rows.push(['Principal &amp; interest',money(pi)]);
+rows.push(['Property tax (monthly)',money(t)]);
+rows.push(['Homeowners insurance (monthly)',money(i)]);
+rows.push(['<strong>PITI (principal, interest, taxes, insurance)</strong>','<strong>'+money(piti)+'</strong>']);
+rows.push(['Mortgage insurance (monthly, if entered)',money(pmi)]);
+rows.push(['HOA dues (monthly)',money(hoa)]);
+rows.push(['<strong>Estimated total monthly housing payment</strong>','<strong>'+money(all)+'</strong>']);
+rows.push(['Total of principal &amp; interest payments over '+yrs+' years',money(total)]);
+rows.push(['Total interest over the loan',money(interest)]);
+var yr1=0,bal=loan,r=rate/100/12;
+for(var k=0;k<Math.min(12,n)&&bal>0;k++){var ip=bal*r;yr1+=pmt(loan,rate,yrs)-ip;bal-=pmt(loan,rate,yrs)-ip}
+rows.push(['Principal paid in year 1 (of '+money(pi*Math.min(12,n))+' paid)',money(yr1)]);
+rows.push(['Balance after year 1',money(Math.max(0,bal))]);
+if(n>=60){var b5=loan;for(var k2=0;k2<60;k2++){var ip2=b5*r;b5-=pi-ip2}rows.push(['Balance after 5 years',money(Math.max(0,b5))]);}
+$('out').innerHTML=rows.map(function(x){return '<tr><td>'+x[0]+'</td><td>'+x[1]+'</td></tr>'}).join('');
+}
+['pr','dn','rt','tm','tx','in','ho','pm'].forEach(function(id){$(id).oninput=calc;$(id).onchange=calc});calc();
+})();
+</script><!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9f2a9f711cc14027b0414014ae5d8877"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>
