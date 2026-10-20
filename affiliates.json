@@ -13,5 +13,5 @@
   "monarch-money": { "name": "Monarch Money", "vendor": "https://www.monarchmoney.com", "url": "", "live": false },
   "bonsai":    { "name": "Bonsai",    "vendor": "https://www.hellobonsai.com",  "url": "", "live": false },
   "honeybook": { "name": "HoneyBook", "vendor": "https://www.honeybook.com",    "url": "", "live": false },
-  "gumroad-templates": { "name": "Own Gumroad templates", "vendor": "", "url": "", "live": false, "_note": "Own product, not an affiliate link. Paste your Gumroad listing URL in \"url\" and set live:true to switch on the template box on the invoice, expense and late-payment pages." }
+  "gumroad-templates": { "name": "Own Gumroad templates", "vendor": "", "url": "https://joelrod6.gumroad.com/l/qchhvy", "live": true, "_note": "Own product, not an affiliate link. Paste your Gumroad listing URL in \"url\" and set live:true to switch on the template box on the invoice, expense and late-payment pages." }
 }
