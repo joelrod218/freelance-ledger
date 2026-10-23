@@ -51,4 +51,9 @@ t('Invoice totals in cents', () => {
 });
 t('ICS has valid structure', () => { const s = FL.ics([{ date: '2027-01-15', title: 'Pay', desc: 'x, y' }]); assert.ok(s.startsWith('BEGIN:VCALENDAR')); assert.ok(s.includes('DTSTART;VALUE=DATE:20270115')); assert.ok(s.includes('DTEND;VALUE=DATE:20270116')); assert.ok(s.includes('x\\, y')); });
 t('Due-date list covers 8 payments in order', () => { assert.equal(FL.DUE.length, 8); for (let i = 1; i < 8; i++) assert.ok(FL.DUE[i][0] > FL.DUE[i - 1][0]); });
+t('Set-aside table: single $50k and $100k federal share of profit', () => {
+  const a = FL.quarterly({ profit: 50000 }), b = FL.quarterly({ profit: 100000 }), c = FL.quarterly({ status: 'mfj', profit: 100000 });
+  near(a.federal, 9732.07, 0.01); near(b.federal, 22364.55, 0.01); near(c.federal, 19464.13, 0.01);
+  near(a.federal / 50000, 0.195, 0.0005); near(b.federal / 100000, 0.224, 0.0005);
+});
 console.log(`\n${n} tests passed`);
