@@ -56,4 +56,15 @@ t('Set-aside table: single $50k and $100k federal share of profit', () => {
   near(a.federal, 9732.07, 0.01); near(b.federal, 22364.55, 0.01); near(c.federal, 19464.13, 0.01);
   near(a.federal / 50000, 0.195, 0.0005); near(b.federal / 100000, 0.224, 0.0005);
 });
+t('S corp: $60k profit, $30k salary, $1,500 costs (hand-checked)', () => {
+  const r = FL.scorp({ status: 'single', profit: 60000, salary: 30000, costs: 1500 });
+  near(r.s.employerFica, 2295, 0.001); near(r.s.futa, 42, 0.001); near(r.s.distribution, 26163, 0.001);
+  near(r.s.qbiDed, 5232.6, 0.001); near(r.s.incomeTax, 3931.65, 0.01); near(r.s.total, 10063.65, 0.01);
+  near(r.sole.total, 12037.20, 0.01); near(r.savings, 1973.55, 0.01);
+});
+t('S corp: salary capped so wages + employer taxes fit in profit', () => {
+  const r = FL.scorp({ profit: 50000, salary: 80000, costs: 1500 }); assert.equal(r.s.capped, true);
+  near(r.s.salary + r.s.employerFica + r.s.futa, 48500, 0.01); near(r.s.distribution, 0, 0.01);
+});
+t('S corp: costs alone make it a loss at zero profit', () => near(FL.scorp({ profit: 0, salary: 0, costs: 2000 }).savings, -2000, 0.001));
 console.log(`\n${n} tests passed`);

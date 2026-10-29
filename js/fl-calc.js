@@ -141,6 +141,37 @@
     return { se: se.se, half: se.half, netEarn: netEarn, employer: employer, deferral: deferral, soloTotal: base + catchApplied, soloBase: base, catchUp: catchApplied, sep: sep };
   }
 
+
+  /* S corp vs sole proprietor, 2026 federal only. i = {status, profit, salary, costs, qbi}
+     profit = business net profit before paying yourself; salary = W-2 pay to the owner; costs = extra yearly S corp costs */
+  function scorp(i) {
+    var status = i.status === 'mfj' ? 'mfj' : 'single';
+    var profit = Math.max(0, num(i.profit)), costs = Math.max(0, num(i.costs)), useQbi = i.qbi !== false;
+    var sole = quarterly({ status: status, profit: profit, qbi: useQbi });
+    var room = Math.max(0, profit - costs);
+    var fica = function (w) { return T.ssRate / 2 * Math.min(w, T.ssWageBase) + T.medRate / 2 * w; };
+    var futa = function (w) { return w > 0 ? 0.006 * Math.min(w, 7000) : 0; };
+    var w = Math.max(0, num(i.salary)), capped = false;
+    if (w + fica(w) + futa(w) > room) {
+      capped = true; var lo = 0, hi = room;
+      for (var k = 0; k < 60; k++) { var mid = (lo + hi) / 2; if (mid + fica(mid) + futa(mid) > room) hi = mid; else lo = mid; }
+      w = lo;
+    }
+    var er = fica(w), fu = futa(w);
+    var ee = fica(w) + T.addlMed * Math.max(0, w - T.addlMedThreshold[status]);
+    var k1 = Math.max(0, room - w - er - fu);
+    var agi = w + k1, std = T.stdDed[status], taxableBefore = Math.max(0, agi - std), qbiDed = 0, qbiNote = '';
+    if (useQbi) { if (taxableBefore > T.qbiApproxThreshold[status]) qbiNote = 'over'; else qbiDed = 0.2 * Math.min(k1, taxableBefore); }
+    var taxable = Math.max(0, taxableBefore - qbiDed), inc = incomeTax(taxable, status);
+    var payroll = er + ee + fu, total = payroll + inc + costs;
+    return {
+      sole: { se: sole.se.se + sole.se.addl, incomeTax: sole.incomeTax, qbiDed: sole.qbiDed, qbiNote: sole.qbiNote, total: sole.federal },
+      s: { salary: w, capped: capped, employerFica: er, employeeFica: ee, futa: fu, payroll: payroll, distribution: k1, qbiDed: qbiDed, qbiNote: qbiNote,
+           incomeTax: inc, costs: costs, total: total },
+      savings: sole.federal - total
+    };
+  }
+
   // Invoice maths in integer cents to avoid float drift
   function invoice(lines, taxPct, discount) {
     var sub = 0;
@@ -175,5 +206,5 @@
 
   var fmt = function (n, d) { return (n < 0 ? '-' : '') + '$' + Math.abs(n).toLocaleString('en-US', { minimumFractionDigits: d || 0, maximumFractionDigits: d || 0 }); };
   return { T: T, r2: r2, seTax: seTax, incomeTax: incomeTax, marginalRate: marginalRate, quarterly: quarterly, mileage: mileage, homeOffice: homeOffice,
-    profitFirst: profitFirst, runway: runway, solo: solo, invoice: invoice, DUE: DUE, ics: ics, fmt: fmt };
+    profitFirst: profitFirst, scorp: scorp, runway: runway, solo: solo, invoice: invoice, DUE: DUE, ics: ics, fmt: fmt };
 });
